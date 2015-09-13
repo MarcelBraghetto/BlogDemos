@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.marcelbraghetto.configula.mainapp">
+
+    <!--
+    Note that this manifest is only for the debug build
+    variant and will not be compiled into a release build.
+    -->
+    <application>
+        <!--
+        This is our custom 'deep link' handling activity which will be
+        able to receive the links and action them.
+        -->
+        <activity
+            android:name=".ConfigulaActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <data
+                    android:scheme="configula"
+                    android:host="io.github.marcelbraghetto.configula.mainapp"
+                    />
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Configula Launcher</string>
+
+    <string name="intro">Select your configuration settings then tap launch to apply them to the main app.</string>
+    <string name="launch">Launch main app</string>
+
+    <string name="no_intent_activity">You don\'t have the main app installed, or it is a RELEASE build!</string>
+
+    <string name="enable_analytics">Enable analytics</string>
+
+    <!--
+    Declare the names to display in the list
+    of servers to choose from - note this must
+    have the same number of items as the 'server_urls'
+    string array so they can be keyed together.
+    -->
+    <string-array name="server_names">
+        <item>Development Server</item>
+        <item>Test Server</item>
+        <item>Verify Server</item>
+        <item>Production Server</item>
+    </string-array>
+
+    <!--
+    Define the server urls for each of the servers
+    in the 'server_names' array.
+    -->
+    <string-array name="server_urls">
+        <item>http://localhost/dev_server</item>
+        <item>http://localhost/test_server</item>
+        <item>http://localhost/verify_server</item>
+        <item>http://localhost/production_server</item>
+    </string-array>
+</resources>
