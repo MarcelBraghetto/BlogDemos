@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remote view: rendered via AIDL commands"
+            android:textColor="#333"
+            android:textSize="11sp"
+            android:padding="8dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ccc"
+            android:padding="2dp"
+            >
+            <io.github.marcelbraghetto.kaleidoscope.local.OutputDrawingCanvas
+                android:id="@+id/output_drawing_canvas"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Local view: draw below with your finger"
+            android:textColor="#333"
+            android:textSize="11sp"
+            android:padding="8dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ccc"
+            android:padding="2dp"
+            >
+            <io.github.marcelbraghetto.kaleidoscope.local.InputDrawingCanvas
+                android:id="@+id/input_drawing_canvas"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
