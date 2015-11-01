@@ -8,6 +8,12 @@ Samples:
 
 ---
 
+**AIDL Kaleidoscope** - [Blog link](https://marcelbraghetto.github.io/android/2015/11/01/kaleidoscope/)
+
+Example of using AIDL (Android Interface Definition Language) for IPC (Inter Process Communication) across Android application and process boundaries.
+
+---
+
 **Permutations** - [Blog link]
 (http://marcelbraghetto.github.io/algorithms/2015/09/20/permutations/)
 
